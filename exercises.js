@@ -17,7 +17,9 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
   return "Get back to coding!";
 };*/
 
-console.log('Happy Alooooha Friday!');
+console.log('Happy Alooooha Friday!'); 
+
+var day = 'Friday!';
 
 
 /*
