@@ -21,6 +21,8 @@ console.log('Happy Alooooha Friday!');
 
 var day = 'Friday!';
 
+var tester = 'Tester';
+
 
 /*
  * #1
