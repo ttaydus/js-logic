@@ -51,6 +51,16 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+function login(password){
+  if (password === "test1234"){
+    return "Login Success!";
+  }else{
+    return "Invalid Password";
+  }
+}
+
+console.log('2. login:', login('test1234'));
+
 
 /*
  * #3
