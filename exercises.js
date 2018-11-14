@@ -178,7 +178,7 @@ function notEqual(first, second){
   if(first != second){
     return 'Opposites do attract.';
   }else{
-    return 'Cause it\'s like you\'re my mirror.'
+    return 'Cause it\'s like you\'re my mirror.';
   }
 }
 
@@ -201,9 +201,9 @@ console.log(notEqual('cat', 'Cat'));
 
 function spareChange(money){
   if(money > 100){
-    return true
+    return true;
   }else{
-    return false
+    return false;
   }
 }
 
@@ -228,9 +228,9 @@ console.log(spareChange(99));
 
 function dirty30(one, two, three){
   if((one + two + three)>30){
-    return true
+    return true;
   }else{
-    return false
+    return false;
   }
 }
 
@@ -249,7 +249,15 @@ console.log('9. dirty30:', dirty30(1,2,3));
  * Console.log your result.
 */ 
 
+function evenStevens(num){
+  if(num%2 === 0){
+    return true;
+  }else{
+    return false;
+  }
+}
 
+console.log(evenStevens(11));
 
 
 /*
