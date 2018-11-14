@@ -149,6 +149,17 @@ console.log(bigBird('four'));
  * Console.log your result.
 */
 
+function isEqual(first, second){
+  if(first === second){
+    return 'You look mahvelous!';
+  }else{
+    return 'I don\'t know who you are anymore';
+  }
+}
+
+console.log('6. isEqual:', isEqual('cat', 'Cat'));
+console.log(isEqual('cat', 'cat'));
+
 
 /*
  * #7
