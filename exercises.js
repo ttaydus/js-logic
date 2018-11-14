@@ -199,6 +199,16 @@ console.log(notEqual('cat', 'Cat'));
  * Console.log your result.
 */ 
 
+function spareChange(money){
+  if(money > 100){
+    return true
+  }else{
+    return false
+  }
+}
+
+console.log('8. spareChange:', spareChange(101));
+console.log(spareChange(99));
 
 
 /*
