@@ -338,7 +338,6 @@ console.log(moneyTrain(20));
 console.log(moneyTrain(130));
 
 
-
 /*
  * #14
  * Function - buyDoughnut
@@ -358,6 +357,21 @@ console.log(moneyTrain(130));
 Inside the function, create a switch statement that will check the daily specials of your favorite restaurant (or make up your own daily specials for each day of the week.*/
 
 
+  var budget = 25;
+  var doughnutPrice = 4;
+  var doughnutBought = 0;
+
+  function buyDoughnut(){
+    if(budget >= doughnutPrice){
+      budget -= doughnutPrice; 
+      doughnutBought++;
+    }
+  }
+
+  buyDoughnut();
+  console.log(budget);
+  console.log(doughnutBought);
+    
 
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
@@ -368,12 +382,6 @@ The for loop is made up for 3 parts:
 2) Condition (i.e. i<arr.length;)
 3) Update (i.e. i++)
 */
-
-var toyotaModels = ["Corolla", "Prius", "4 Runner", "Camry", "Land Cruiser"];
-
-for (var i = 0; i<toyotaModels.length; i++){
-   console.log("Toyota " + toyotaModels[i]);
-}
 
 
 /* 
@@ -386,6 +394,10 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
+for( var i = 1; i < 6; i++){
+  console.log('Player' + i);
+}
+
 
 /* 
  * #16
@@ -393,6 +405,12 @@ for (var i = 0; i<toyotaModels.length; i++){
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
+  for( var i = 0; i < 7; i++){
+    console.log(myFavFoods[i]);
+  }
+
+  myFavFoods.push('sushi');
+  console.log(myFavFoods);
 
 /*
  * #17
@@ -410,6 +428,18 @@ for (var i = 0; i<toyotaModels.length; i++){
 */
 
 
+var numArray = [1,2,3,4,5];
+var total = 0
+
+function sumItUp(arr){
+  for(var i = 0; i<arr.length; i++){
+    total += numArray[i];
+  }
+  return total;
+}
+
+console.log(sumItUp(numArray));
+
 
 /*
  * #18
@@ -424,6 +454,19 @@ for (var i = 0; i<toyotaModels.length; i++){
 */ 
 
 var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+var East = [];
+var West = [];
+
+function allStars(ballers){
+  for( var i = 0; i<ballers.length; i++){
+    console.log(ballers[i]);
+  }
+}
+
+
+
+
+
 /*
  * #19
  * Function - subways
